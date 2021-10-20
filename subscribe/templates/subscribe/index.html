@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>send email</title>
+</head>
+<body>
+    <center>
+        <h3>Email forms</h3>
+        <h3 style = 'font-size: 30px;'>codezilla
+    </h3>
+    <form method="POST">
+        {% csrf_token %}
+        <div class = "form-group">
+        <p><h3>{{ form.as_p }}</h3></p>
+        <br>
+        <input type="submit" name="Subscribe">
+        </div>
+    </form>
+    </center>
+</body>
+</html>
